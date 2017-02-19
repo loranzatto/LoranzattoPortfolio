@@ -29,5 +29,7 @@ namespace LoranzattoPortfolio.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<LoranzattoPortfolio.Models.UserModels> UserModels { get; set; }
     }
 }

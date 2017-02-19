@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LoranzattoPortfolio
+namespace LoranzattoPortfolio.Models
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
@@ -86,6 +86,8 @@ namespace LoranzattoPortfolio
 		
 		private string _Email;
 		
+		private string _Password;
+		
 		private System.DateTime _CreationDate;
 		
     #region Extensibility Method Definitions
@@ -98,6 +100,8 @@ namespace LoranzattoPortfolio
     partial void OnNameChanged();
     partial void OnEmailChanging(string value);
     partial void OnEmailChanged();
+    partial void OnPasswordChanging(string value);
+    partial void OnPasswordChanged();
     partial void OnCreationDateChanging(System.DateTime value);
     partial void OnCreationDateChanged();
     #endregion
@@ -163,6 +167,26 @@ namespace LoranzattoPortfolio
 					this._Email = value;
 					this.SendPropertyChanged("Email");
 					this.OnEmailChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Password", DbType="NVarChar(8) NOT NULL", CanBeNull=false)]
+		public string Password
+		{
+			get
+			{
+				return this._Password;
+			}
+			set
+			{
+				if ((this._Password != value))
+				{
+					this.OnPasswordChanging(value);
+					this.SendPropertyChanging();
+					this._Password = value;
+					this.SendPropertyChanged("Password");
+					this.OnPasswordChanged();
 				}
 			}
 		}

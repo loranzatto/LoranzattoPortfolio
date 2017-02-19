@@ -7,57 +7,10 @@ namespace LoranzattoPortfolio.Models
 {
     public class UserModels
     {
-        
-        public int Id
-        {
-            get
-            {
-                return Id;
-            }
-
-            set
-            {
-                Id = value;
-            }
-        }
-
-        public string Name
-        {
-            get
-            {
-                return Name;
-            }
-
-            set
-            {
-                Name = value;
-            }
-        }
-
-        public string Email
-        {
-            get
-            {
-                return Email;
-            }
-
-            set
-            {
-                Email = value;
-            }
-        }
-
-        public DateTime CreationDate
-        {
-            get
-            {
-                return CreationDate;
-            }
-
-            set
-            {
-                CreationDate = value;
-            }
-        }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public DateTime CreationDate { get; set; }            
     }
 }
