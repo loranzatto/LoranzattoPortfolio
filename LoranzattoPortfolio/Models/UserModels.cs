@@ -5,7 +5,7 @@ using System.Web;
 
 namespace LoranzattoPortfolio.Models
 {
-    public class UserModel
+    public class UserModels
     {
         
         public int Id
