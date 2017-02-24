@@ -24,7 +24,7 @@ namespace LoranzattoPortfolio.Models
                 Name = UserModel.Name,
                 Email = UserModel.Email,
                 Password = UserModel.Password,
-                CreationDate = UserModel.CreationDate
+                CreationDate = DateTime.Now
             };
             DataContext.OurUsers.InsertOnSubmit(UserData);
             DataContext.SubmitChanges();

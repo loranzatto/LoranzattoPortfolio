@@ -36,7 +36,8 @@ namespace LoranzattoPortfolio.Controllers
                 if (ModelState.IsValid)
                 {
                     _repository.ToInsertUser(userModel);
-                    return RedirectToAction("Insert");
+                    ViewBag.StatusMessage = "Success";
+                    return View("Insert");
                 }
             }
             catch (DataException)
