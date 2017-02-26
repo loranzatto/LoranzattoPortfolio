@@ -32,7 +32,8 @@ namespace LoranzattoPortfolio.Controllers
                 if (ModelState.IsValid)
                 {
                     _repository.ToInsertUser(userModel);
-                    ViewBag.StatusMessage = "Comment sent was succeeded!";
+                    ViewBag.StatusMessage = "Comment sent with success!";
+                    ModelState.Clear();
                     return View("Insert");
                 }
             }

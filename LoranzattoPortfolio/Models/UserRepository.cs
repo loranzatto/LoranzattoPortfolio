@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LoranzattoPortfolio.App_Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -23,7 +24,7 @@ namespace LoranzattoPortfolio.Models
                 Id = UserModel.Id,
                 Name = UserModel.Name,
                 Email = UserModel.Email,
-                Password = UserModel.Password,
+                Comments = UserModel.Comments,
                 CreationDate = DateTime.Now
             };
             DataContext.OurUsers.InsertOnSubmit(UserData);

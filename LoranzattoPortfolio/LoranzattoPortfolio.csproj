@@ -214,7 +214,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\IUserRepository.cs" />
-    <Compile Include="Models\Loranzatto.designer.cs">
+    <Compile Include="App_Data\Loranzatto.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Loranzatto.dbml</DependentUpon>
@@ -245,7 +245,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Models\Loranzatto.dbml">
+    <Content Include="App_Data\Loranzatto.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>Loranzatto.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
@@ -311,7 +311,7 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Models\Loranzatto.dbml.layout">
+    <None Include="App_Data\Loranzatto.dbml.layout">
       <DependentUpon>Loranzatto.dbml</DependentUpon>
     </None>
   </ItemGroup>

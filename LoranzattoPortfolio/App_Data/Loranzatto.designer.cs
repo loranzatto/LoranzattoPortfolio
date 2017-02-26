@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LoranzattoPortfolio.Models
+namespace LoranzattoPortfolio.App_Data
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
@@ -86,7 +86,7 @@ namespace LoranzattoPortfolio.Models
 		
 		private string _Email;
 		
-		private string _Password;
+		private string _Comments;
 		
 		private System.DateTime _CreationDate;
 		
@@ -100,8 +100,8 @@ namespace LoranzattoPortfolio.Models
     partial void OnNameChanged();
     partial void OnEmailChanging(string value);
     partial void OnEmailChanged();
-    partial void OnPasswordChanging(string value);
-    partial void OnPasswordChanged();
+    partial void OnCommentsChanging(string value);
+    partial void OnCommentsChanged();
     partial void OnCreationDateChanging(System.DateTime value);
     partial void OnCreationDateChanged();
     #endregion
@@ -171,22 +171,22 @@ namespace LoranzattoPortfolio.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Password", DbType="NVarChar(8) NOT NULL", CanBeNull=false)]
-		public string Password
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Comments", DbType="NVarChar(8) NOT NULL", CanBeNull=false)]
+		public string Comments
 		{
 			get
 			{
-				return this._Password;
+				return this._Comments;
 			}
 			set
 			{
-				if ((this._Password != value))
+				if ((this._Comments != value))
 				{
-					this.OnPasswordChanging(value);
+					this.OnCommentsChanging(value);
 					this.SendPropertyChanging();
-					this._Password = value;
-					this.SendPropertyChanged("Password");
-					this.OnPasswordChanged();
+					this._Comments = value;
+					this.SendPropertyChanged("Comments");
+					this.OnCommentsChanged();
 				}
 			}
 		}
