@@ -19,10 +19,6 @@ namespace LoranzattoPortfolio.Controllers
         {
             _repository = repository;
         }
-        public ActionResult Index()
-        {
-            return View("Insert data was succeded!");
-        }
         
         public ActionResult Insert()
         {
@@ -36,7 +32,7 @@ namespace LoranzattoPortfolio.Controllers
                 if (ModelState.IsValid)
                 {
                     _repository.ToInsertUser(userModel);
-                    ViewBag.StatusMessage = "Success";
+                    ViewBag.StatusMessage = "Comment sent was succeeded!";
                     return View("Insert");
                 }
             }
