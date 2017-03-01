@@ -1,7 +1,32 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = Resources.Global.AboutTitle;      
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<h2>@ViewBag.Title</h2>
 
-<p>Use this area to provide additional information.</p>
+<h3>@Resources.Global.AboutMe 
+    <br> 
+    <br>
+    @Resources.Global.AboutMyUniversity 
+    <br>    
+</h3>
+
+<p>@Resources.Global.AboutMyLinkedin</p>
+<a target="_blank" href="https://br.linkedin.com/in/wagner-loranzatto">
+    <img src="~/Images/logo-linkedin.png">
+</a>
+
+<hr />
+
+<br>
+<p>@Resources.Global.AboutSummary</p>
+<br>
+<p>@Html.Raw(Html.Encode(@Resources.Global.AboutSummaryDetails).Replace("\\n", "<br />"))</p>
+
+<hr />
+
+<p>@Resources.Global.AboutImplementation</p>
+
+<p>@Html.Raw(Html.Encode(@Resources.Global.AboutImplementationDetails).Replace("\\n", "<br />"))</p>
+
+
+

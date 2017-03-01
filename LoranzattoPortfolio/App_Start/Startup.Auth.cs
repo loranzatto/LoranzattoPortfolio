@@ -6,6 +6,8 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using LoranzattoPortfolio.Models;
+using System.Web.Mvc;
+using LoranzattoPortfolio.Controllers;
 
 namespace LoranzattoPortfolio
 {
@@ -63,6 +65,7 @@ namespace LoranzattoPortfolio
             //    ClientId = "",
             //    ClientSecret = ""
             //});
+            
         }
     }
 }
