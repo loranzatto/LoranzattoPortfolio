@@ -8,6 +8,10 @@ using LoranzattoPortfolio.Models;
 
 namespace LoranzattoPortfolio.Controllers
 {
+    /// <summary>
+    /// Controller class that receive the data from the View class and send to 
+    /// the Model class to be persisted in the database.
+    /// </summary>
     public class UserController : Controller
     {
         private IUserRepository _repository;
@@ -19,11 +23,21 @@ namespace LoranzattoPortfolio.Controllers
         {
             _repository = repository;
         }
-        
+        /// <summary>
+        /// Method to be render the page with the clean fields.
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Insert()
         {
             return View("Insert",new UserModels());
         }
+        /// <summary>
+        /// Get the UserModel Entity object from the View page that use Razor and 
+        /// send to the Model Class through the Repository class, after that send the message 
+        /// that the operation executed with succes and render the View page again.
+        /// </summary>
+        /// <param name="userModel"></param>
+        /// <returns></returns>
         [HttpPost, ActionName("Insert")]
         public ActionResult Insert(UserModels userModel)
         {
@@ -32,14 +46,14 @@ namespace LoranzattoPortfolio.Controllers
                 if (ModelState.IsValid)
                 {
                     _repository.ToInsertUser(userModel);
-                    ViewBag.StatusMessage = "Comment sent with success!";
+                    ViewBag.StatusMessage = Resources.Global.ResourceManager.GetString("SuccessMessage");
                     ModelState.Clear();
                     return View("Insert");
                 }
             }
             catch (DataException)
             {
-                ModelState.AddModelError("", "Insert Operation Can't Executed!");
+                ModelState.AddModelError(String.Empty, Resources.Global.ResourceManager.GetString("SuccessMessage"));
 
             }
             return View(userModel);

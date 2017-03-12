@@ -6,6 +6,10 @@ using System.Web;
 
 namespace LoranzattoPortfolio.Models
 {
+    /// <summary>
+    /// Entity class that define which characteristics is necessary to the user 
+    /// to send a message to the own application
+    /// </summary>
     public class UserModels
     {
         public int Id { get; set; }

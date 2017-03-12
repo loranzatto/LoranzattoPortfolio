@@ -6,6 +6,9 @@ using System.Web;
 
 namespace LoranzattoPortfolio.Models
 {
+    /// <summary>
+    /// Repository class to make the interface between Model and Controller classes
+    /// </summary>
     public class UserRepository : IUserRepository
     {
         private LoranzattoDataContext DataContext;
@@ -14,7 +17,12 @@ namespace LoranzattoPortfolio.Models
         {
             DataContext = new LoranzattoDataContext();
         }
-
+        /// <summary>
+        /// Method to insert a new user message data. 
+        /// The method receive an Object UserModel from Controller class through the interface IUserRepository
+        /// and persist the data in teh SQL Database.s
+        /// </summary>
+        /// <param name="UserModel"></param>
         public void ToInsertUser(UserModels UserModel)
         {
         try
