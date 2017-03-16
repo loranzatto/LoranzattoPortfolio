@@ -175,4 +175,7 @@ Technologies: VB6, SQL Server 2008 \n
   <data name="SuccessMessage" xml:space="preserve">
     <value>Message Sent with Success !</value>
   </data>
+  <data name="TestGitRepo" xml:space="preserve">
+    <value />
+  </data>
 </root>
