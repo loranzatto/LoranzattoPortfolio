@@ -4,7 +4,7 @@
     ViewBag.Title = "Contact";
 }
 
-<h2>Contact</h2>
+<h2>@ViewBag.Title</h2>
 
 
 @using (Html.BeginForm())
@@ -12,7 +12,7 @@
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        <h4>UserModels</h4>
+        <p>@Resources.Global.ContactInitialMessage</p>
         <p class="text-success">@ViewBag.StatusMessage</p>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })

@@ -3,12 +3,12 @@
 }
 <h2>@ViewBag.Title</h2>
 
-<h3>@Resources.Global.AboutMe 
+<p>@Resources.Global.AboutMe 
     <br> 
     <br>
     @Resources.Global.AboutMyUniversity 
     <br>    
-</h3>
+</p>
 
 <p>@Resources.Global.AboutMyLinkedin</p>
 <a target="_blank" href="https://br.linkedin.com/in/wagner-loranzatto">
@@ -17,14 +17,13 @@
 
 <hr />
 
-<br>
-<p>@Resources.Global.AboutSummary</p>
+<h2>@Resources.Global.AboutSummary</h2>
 <br>
 <p>@Html.Raw(Html.Encode(@Resources.Global.AboutSummaryDetails).Replace("\\n", "<br />"))</p>
 
 <hr />
 
-<p>@Resources.Global.AboutImplementation</p>
+<h2>@Resources.Global.AboutImplementation</h2>
 
 <p>@Html.Raw(Html.Encode(@Resources.Global.AboutImplementationDetails).Replace("\\n", "<br />"))</p>
 

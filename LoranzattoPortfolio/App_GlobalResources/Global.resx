@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutImplementation" xml:space="preserve">
-    <value>Implementation Projects</value>
+    <value>Implemented Projects</value>
   </data>
   <data name="AboutImplementationDetails" xml:space="preserve">
     <value>New Sales Order System \n
@@ -156,7 +156,7 @@ Technologies: VB6, SQL Server 2008 \n
 • Proven skills in how to analyze and to specify a system \n
 • Demonstrated ability to work under pressure \n
 • Professional communication skills include intermediate in English, facility to talk with my co-workers, used to making presentations and facility to get requirements with the end user \n
-• Computer skills include: \n	
+• Developing skills include: \n	
       - VB6 (+8 Years) \n
       - C# (+3 Years) \n
       - ASP.NET MVC (+2 Years) \n
@@ -168,6 +168,9 @@ Technologies: VB6, SQL Server 2008 \n
   </data>
   <data name="AppName" xml:space="preserve">
     <value>Loranzatto's Portfolio</value>
+  </data>
+  <data name="ContactInitialMessage" xml:space="preserve">
+    <value>I`m waiting anciously for your message</value>
   </data>
   <data name="InsertError" xml:space="preserve">
     <value>Insert Operation Can't Executed!</value>
