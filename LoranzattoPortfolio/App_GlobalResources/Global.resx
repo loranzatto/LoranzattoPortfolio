@@ -175,6 +175,9 @@ Technologies: VB6, SQL Server 2008 \n
   <data name="InsertError" xml:space="preserve">
     <value>Insert Operation Can't Executed!</value>
   </data>
+  <data name="SeeMore" xml:space="preserve">
+    <value>See More</value>
+  </data>
   <data name="SuccessMessage" xml:space="preserve">
     <value>Message Sent with Success !</value>
   </data>
