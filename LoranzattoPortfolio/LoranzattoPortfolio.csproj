@@ -241,11 +241,34 @@
     </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\creative.css" />
+    <Content Include="Content\creative.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="gulpfile.js" />
+    <Content Include="Images\header.jpg" />
     <Content Include="Images\logo-linkedin.png" />
+    <Content Include="Images\Portfolio\fullsize\1.jpg" />
+    <Content Include="Images\Portfolio\fullsize\2.jpg" />
+    <Content Include="Images\Portfolio\fullsize\3.jpg" />
+    <Content Include="Images\Portfolio\fullsize\4.jpg" />
+    <Content Include="Images\Portfolio\fullsize\5.jpg" />
+    <Content Include="Images\Portfolio\fullsize\6.jpg" />
+    <Content Include="Images\Portfolio\thumbnails\1.jpg" />
+    <Content Include="Images\Portfolio\thumbnails\2.jpg" />
+    <Content Include="Images\Portfolio\thumbnails\3.jpg" />
+    <Content Include="Images\Portfolio\thumbnails\4.jpg" />
+    <Content Include="Images\Portfolio\thumbnails\5.jpg" />
+    <Content Include="Images\Portfolio\thumbnails\6.jpg" />
+    <Content Include="Views\Home\IndexOLD.cshtml" />
+    <Content Include="Index2.html">
+      <BrowseToURL>~/Index2.html</BrowseToURL>
+    </Content>
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -258,21 +281,78 @@
       <LastGenOutput>Loranzatto.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Less\creative.less" />
+    <Content Include="Less\mixins.less" />
+    <Content Include="Less\variables.less" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Less\animated.less" />
+    <Content Include="Less\bordered-pulled.less" />
+    <Content Include="Less\core.less" />
+    <Content Include="Less\fixed-width.less" />
+    <Content Include="Less\font-awesome.less" />
+    <Content Include="Less\icons.less" />
+    <Content Include="Less\larger.less" />
+    <Content Include="Less\list.less" />
+    <Content Include="Less\Less-FontAwesome\animated.less" />
+    <Content Include="Less\Less-FontAwesome\bordered-pulled.less" />
+    <Content Include="Less\Less-FontAwesome\core.less" />
+    <Content Include="Less\Less-FontAwesome\fixed-width.less" />
+    <Content Include="Less\Less-FontAwesome\font-awesome.less" />
+    <Content Include="Less\Less-FontAwesome\icons.less" />
+    <Content Include="Less\Less-FontAwesome\larger.less" />
+    <Content Include="Less\Less-FontAwesome\list.less" />
+    <Content Include="Less\Less-FontAwesome\mixins.less" />
+    <Content Include="Less\Less-FontAwesome\path.less" />
+    <Content Include="Less\Less-FontAwesome\rotated-flipped.less" />
+    <Content Include="Less\Less-FontAwesome\screen-reader.less" />
+    <Content Include="Less\Less-FontAwesome\stacked.less" />
+    <Content Include="Less\Less-FontAwesome\variables.less" />
+    <Content Include="Content\font-awesome.scss" />
+    <Content Include="Content\_animated.scss" />
+    <Content Include="Content\_bordered-pulled.scss" />
+    <Content Include="Content\_core.scss" />
+    <Content Include="Content\_fixed-width.scss" />
+    <Content Include="Content\_icons.scss" />
+    <Content Include="Content\_larger.scss" />
+    <Content Include="Content\_list.scss" />
+    <Content Include="Content\_mixins.scss" />
+    <Content Include="Content\_path.scss" />
+    <Content Include="Content\_rotated-flipped.scss" />
+    <Content Include="Content\_screen-reader.scss" />
+    <Content Include="Content\_stacked.scss" />
+    <Content Include="Content\_variables.scss" />
+    <Content Include="LICENSE" />
+    <Content Include="package.json" />
     <None Include="Properties\PublishProfiles\loranzatto - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\loranzatto - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\loranzatto - Web Deploy %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\loranzatto - Web Deploy.pubxml" />
+    <Content Include="README.md" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\creative.js" />
+    <Content Include="Scripts\creative.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.magnific-popup.js" />
+    <Content Include="Scripts\jquery.magnific-popup.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Content\magnific-popup.css" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\scrollreveal.js" />
+    <Content Include="Scripts\scrollreveal.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -289,7 +369,9 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml">
+      <BrowseToURL>~/Home/Index</BrowseToURL>
+    </Content>
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
@@ -311,6 +393,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\User\Insert.cshtml" />
+    <Content Include="Views\Shared\_LayoutOLD.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -337,6 +420,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Vendor\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
