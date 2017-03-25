@@ -259,12 +259,14 @@
     <Content Include="Images\Portfolio\fullsize\4.jpg" />
     <Content Include="Images\Portfolio\fullsize\5.jpg" />
     <Content Include="Images\Portfolio\fullsize\6.jpg" />
+    <Content Include="Images\Portfolio\fullsize\Manufacturing.jpg" />
     <Content Include="Images\Portfolio\thumbnails\1.jpg" />
     <Content Include="Images\Portfolio\thumbnails\2.jpg" />
     <Content Include="Images\Portfolio\thumbnails\3.jpg" />
     <Content Include="Images\Portfolio\thumbnails\4.jpg" />
     <Content Include="Images\Portfolio\thumbnails\5.jpg" />
     <Content Include="Images\Portfolio\thumbnails\6.jpg" />
+    <Content Include="Images\Portfolio\thumbnails\Manufacturing.jpg" />
     <Content Include="Views\Home\IndexOLD.cshtml" />
     <Content Include="Index2.html">
       <BrowseToURL>~/Index2.html</BrowseToURL>
