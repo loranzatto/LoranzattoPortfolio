@@ -80,17 +80,25 @@
                     <h2 class="section-heading">@Resources.Global.AboutTitle</h2>
                     <hr class="light">
                     <p class="text-faded">@Resources.Global.AboutMe</p>
-
-                    <p class="text-faded">@Resources.Global.AboutMyUniversity</p>
                     <p class="text-faded">@Resources.Global.AboutMyLinkedin</p>
                     <a target="_blank" href="https://br.linkedin.com/in/wagner-loranzatto">
                         <img src="~/Images/logo-linkedin.png">
                     </a>
+                    <p class="text-faded">@Resources.Global.AboutMyUniversity</p>
+                    <br/>
+                    <h2>@Resources.Global.AboutSummary</h2>
+                    <hr class="light">
+                    <br>
+                    <p class="text-faded">@Html.Raw(Html.Encode(@Resources.Global.AboutSummaryDetails).Replace("\\n", "<br />"))</p>
+
+                    <hr />
+                                       
                     <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
                 </div>
             </div>
         </div>
     </section>
+    @*
     <section id="services">
         <div class="container">
             <div class="row">
@@ -133,110 +141,115 @@
             </div>
         </div>
     </section>
+    *@
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>@Resources.Global.AboutImplementation</h2>
+                <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
+            </div>
+        </div>
+    </aside>
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="~/Images/Portfolio/fullsize/1.jpg" class="portfolio-box">
-                        <img src="~/Images/Portfolio/thumbnails/1.jpg"  class="img-responsive" alt="Image">
+                <div class="col-lg-6 col-sm-6"  >
+                    <a href="~/Images/Portfolio/fullsize/1050px.jpg" class="portfolio-box">
+                        <img src="~/Images/Portfolio/fullsize/1050px.jpg"  class="img-responsive" alt="Image">
+                        
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    @Resources.Global.PortfolioCSharp
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    @Resources.Global.PortfolioCSharpProjectName
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="~/Images/portfolio/fullsize/Manufacturing.jpg" class="portfolio-box">
-                        <img src="~/Images/portfolio/thumbnails/Manufacturing.jpg" class="img-responsive" alt="">
+                <div class="col-lg-6 col-sm-6">
+                    <a href="~/Images/Portfolio/fullsize/1050px.jpg" class="portfolio-box">
+                        <img src="~/Images/Portfolio/fullsize/1050px.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    @Resources.Global.PortfolioMES
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    @Resources.Global.PortfolioMESProjectName
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-6 col-sm-6">
                     <a href="~/Images/portfolio/fullsize/3.jpg" class="portfolio-box">
                         <img src="~/Images/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    @Resources.Global.PortfolioSAPAco
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    @Resources.Global.PortfolioSAPAcoName
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-6 col-sm-6">
                     <a href="~/Images/portfolio/fullsize/4.jpg" class="portfolio-box">
                         <img src="~/Images/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    @Resources.Global.PortfolioSAPCsp
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    @Resources.Global.PortfolioSAPCspName
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="~/Images/portfolio/fullsize/5.jpg" class="portfolio-box">
-                        <img src="~/Images/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
+                @*
+            <div class="col-lg-4 col-sm-6">
+                <a href="~/Images/portfolio/fullsize/5.jpg" class="portfolio-box">
+                    <img src="~/Images/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Category
+                            </div>
+                            <div class="project-name">
+                                Project Name
                             </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="~/Images/portfolio/fullsize/6.jpg" class="portfolio-box">
-                        <img src="~/Images/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="~/Images/portfolio/fullsize/6.jpg" class="portfolio-box">
+                    <img src="~/Images/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Category
+                            </div>
+                            <div class="project-name">
+                                Project Name
                             </div>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </div>
+    </div>
+                *@
     </section>
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Free Download at Start Bootstrap!</h2>
-                <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
-            </div>
-        </div>
-    </aside>
+    
     <section id="contact">
         <div class="container">
             <div class="row">

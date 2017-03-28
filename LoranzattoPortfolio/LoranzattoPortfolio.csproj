@@ -260,6 +260,7 @@
     <Content Include="Images\Portfolio\fullsize\5.jpg" />
     <Content Include="Images\Portfolio\fullsize\6.jpg" />
     <Content Include="Images\Portfolio\fullsize\Manufacturing.jpg" />
+    <Content Include="Images\Portfolio\fullsize\1050px.jpg" />
     <Content Include="Images\Portfolio\thumbnails\1.jpg" />
     <Content Include="Images\Portfolio\thumbnails\2.jpg" />
     <Content Include="Images\Portfolio\thumbnails\3.jpg" />
@@ -423,9 +424,7 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Vendor\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

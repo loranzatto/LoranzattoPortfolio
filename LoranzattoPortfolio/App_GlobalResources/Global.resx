@@ -181,6 +181,30 @@ Technologies: VB6, SQL Server 2008 \n
   <data name="InsertError" xml:space="preserve">
     <value>Insert Operation Can't Executed!</value>
   </data>
+  <data name="PortfolioCSharp" xml:space="preserve">
+    <value>C#</value>
+  </data>
+  <data name="PortfolioCSharpProjectName" xml:space="preserve">
+    <value>Point Of Sales</value>
+  </data>
+  <data name="PortfolioMES" xml:space="preserve">
+    <value>VB6</value>
+  </data>
+  <data name="PortfolioMESProjectName" xml:space="preserve">
+    <value>MES - Manufacturing Execution System</value>
+  </data>
+  <data name="PortfolioSAPAco" xml:space="preserve">
+    <value>SAP PP-PM-QM</value>
+  </data>
+  <data name="PortfolioSAPAcoName" xml:space="preserve">
+    <value>Start Up Project</value>
+  </data>
+  <data name="PortfolioSAPCsp" xml:space="preserve">
+    <value>SAP QM</value>
+  </data>
+  <data name="PortfolioSAPCspName" xml:space="preserve">
+    <value>Start Up Project</value>
+  </data>
   <data name="SeeMore" xml:space="preserve">
     <value>Find Out More</value>
   </data>
