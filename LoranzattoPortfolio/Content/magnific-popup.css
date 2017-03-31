@@ -282,7 +282,13 @@ img.mfp-img {
   top: 100%;
   left: 0;
   width: 100%;
-  cursor: auto; }
+  cursor: auto;
+  background-color:black;
+  text-decoration:none;
+  font-style: normal;
+  font-size: 28px;
+  font-family: Arial, Baskerville, monospace;
+}
 
 .mfp-title {
   text-align: left;
