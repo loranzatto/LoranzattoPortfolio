@@ -29,7 +29,7 @@ namespace LoranzattoPortfolio.Controllers
         /// <returns></returns>
         public ActionResult Insert()
         {
-            return View("Insert",new UserModels());
+            return View("~/Views/Home/Index.cshtml", new UserModels());
         }
         /// <summary>
         /// Get the UserModel Entity object from the View page that use Razor and 
@@ -38,7 +38,7 @@ namespace LoranzattoPortfolio.Controllers
         /// </summary>
         /// <param name="userModel"></param>
         /// <returns></returns>
-        [HttpPost, ActionName("Insert")]
+        [HttpPost, ActionName("~/Views/Home/Index.cshtml")]
         public ActionResult Insert(UserModels userModel)
         {
             try

@@ -110,7 +110,7 @@ var
 	},
 
 	// The ready event handler
-	completed = function( event ) {
+	completed = +function( event ) {
 
 		// readyState === "complete" is good enough for us to call the dom ready in oldIE
 		if ( document.addEventListener || event.type === "load" || document.readyState === "complete" ) {
