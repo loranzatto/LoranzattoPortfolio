@@ -1124,7 +1124,7 @@ var _imgInterval,
 			}
 		}
 		return '';
-	};
+	};//testet problema
 
 $.magnificPopup.registerModule('image', {
 
