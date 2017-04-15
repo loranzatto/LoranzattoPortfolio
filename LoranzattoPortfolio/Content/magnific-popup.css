@@ -303,6 +303,17 @@ img.mfp-img {
 .mfp-gallery .mfp-image-holder .mfp-figure {
   cursor: pointer; }
 
+.mpf-background-panel{  
+  margin-bottom: 20px;
+  background-color: orangered;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  height:1000px;
+  width:1000px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
   /**
        * Remove all paddings around the image on small screen

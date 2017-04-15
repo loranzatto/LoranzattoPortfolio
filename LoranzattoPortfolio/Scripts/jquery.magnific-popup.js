@@ -1131,14 +1131,16 @@ $.magnificPopup.registerModule('image', {
 	options: {
 		markup: '<div class="mfp-figure">'+
 					'<div class="mfp-close"></div>'+
-					'<figure>'+
-						'<div class="mfp-img"></div>'+
-						'<figcaption>'+
-							'<div class="mfp-bottom-bar">'+
-								'<div class="mfp-title">TESTE2</div>'+
-								'<div class="mfp-counter"></div>'+
-							'</div>'+
-						'</figcaption>'+
+					'<figure>' +
+                        '<div class="mpf-background-panel">' +
+						    '<div class="mfp-img"></div>'+
+						    '<figcaption>'+
+							    '<div class="mfp-bottom-bar">'+
+								    '<div class="mfp-title"></div>'+
+								    '<div class="mfp-counter"></div>'+
+							    '</div>'+
+						    '</figcaption>' +
+                         '</div>' +
 					'</figure>'+
 				'</div>',
 		cursor: 'mfp-zoom-out-cur',
