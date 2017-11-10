@@ -64,7 +64,7 @@ var _mfpOn = function(name, f) {
 		var el = document.createElement('div');
 		el.className = 'mfp-'+className;
 		if(html) {
-			el.innerHTML = html;
+		    el.innerHTML = html;
 		}
 		if(!raw) {
 			el = $(el);
@@ -165,7 +165,15 @@ MagnificPopup.prototype = {
 			var items = data.items,
 				item;
 			for(i = 0; i < items.length; i++) {
-				item = items[i];
+			    item = items[i];
+			    
+			    //var div = document.createElement('div');
+			    //div.innerHTML = '<p style="background-color:red">teste1234556</p>';
+			    //document.getElementsByClassName('mpf-background-panel')[0].appendChild(div);
+			    //var div = document.getElementsByClassName('mpf-background-panel');
+			    //div.innerHTML = '<p style="background-color:red">teste1234556</p>';//item.id;
+			    //$('back2').html(item.id);
+                
 				if(item.parsed) {
 					item = item.el[0];
 				}
@@ -361,7 +369,7 @@ MagnificPopup.prototype = {
 		// Wait for next cycle to allow CSS transition
 		setTimeout(function() {
 			
-			if(mfp.content) {
+		    if (mfp.content) {
 				mfp._addClassToMFP(READY_CLASS);
 				mfp._setFocus();
 			} else {
@@ -377,6 +385,7 @@ MagnificPopup.prototype = {
 		mfp.isOpen = true;
 		mfp.updateSize(windowHeight);
 		_mfpTrigger(OPEN_EVENT);
+		$('.mfp-title').html("GTESTE AQUI");
 
 		return data;
 	},
@@ -528,7 +537,8 @@ MagnificPopup.prototype = {
 		// Append container back after its content changed
 		mfp.container.prepend(mfp.contentContainer);
 
-		_mfpTrigger('AfterChange');
+		_mfpTrigger('AfterChange');		
+
 	},
 
 
@@ -1114,6 +1124,7 @@ var _imgInterval,
 		if(item.data && item.data.title !== undefined)
 			return item.data.title;
 
+
 		var src = mfp.st.image.titleSrc;
 
 		if(src) {
@@ -1131,16 +1142,14 @@ $.magnificPopup.registerModule('image', {
 	options: {
 		markup: '<div class="mfp-figure">'+
 					'<div class="mfp-close"></div>'+
-					'<figure>' +
-                        '<div class="mpf-background-panel">' +
-						    '<div class="mfp-img"></div>'+
-						    '<figcaption>'+
-							    '<div class="mfp-bottom-bar">'+
-								    '<div class="mfp-title"></div>'+
-								    '<div class="mfp-counter"></div>'+
-							    '</div>'+
-						    '</figcaption>' +
-                         '</div>' +
+					'<figure>' +                        
+						'<div class="mfp-img"></div>'+
+						'<figcaption>'+
+							'<div class="mfp-bottom-bar">'+
+								'<div class="mfp-title"></div>' +
+								'<div class="mfp-counter"></div>'+
+							'</div>'+
+						'</figcaption>' +                        
 					'</figure>'+
 				'</div>',
 		cursor: 'mfp-zoom-out-cur',
